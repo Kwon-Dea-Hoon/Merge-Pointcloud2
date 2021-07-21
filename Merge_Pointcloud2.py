@@ -2,7 +2,6 @@
 
 import rospy
 import struct
-import numpy as np
 from sensor_msgs import point_cloud2
 from sensor_msgs.msg import PointCloud2, PointField
 from std_msgs.msg import Header
