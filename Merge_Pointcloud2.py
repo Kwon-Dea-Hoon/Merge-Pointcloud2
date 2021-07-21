@@ -24,7 +24,7 @@ class Merge_Pointcloud2:
             y=float(p[1])
             z=float(p[2])
             i=float(p[3])
-            pt1=[x1,y1,z1,i]
+            pt1=[x,y,z,i]
             points1.append(pt1)
         self.point1=points1
 
@@ -36,7 +36,7 @@ class Merge_Pointcloud2:
             y=float(p[1])
             z=float(p[2])
             i=float(p[3])
-            pt1=[x1,y1,z1,i]
+            pt1=[x,y,z,i]
             points2.append(pt1)
         points2=points2+self.point1
         fields1 = [PointField('x', 0, PointField.FLOAT32, 1),
