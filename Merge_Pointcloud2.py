@@ -6,7 +6,6 @@ import numpy as np
 from sensor_msgs import point_cloud2
 from sensor_msgs.msg import PointCloud2, PointField
 from std_msgs.msg import Header
-import time
 
 class Merge_Pointcloud2:
     def __init__(self):
@@ -48,7 +47,7 @@ class Merge_Pointcloud2:
         PointField('intensity', 12, PointField.UINT32, 1),
         ]
         header1 = Header()
-        header1.frame_id = "velodyne"
+        header1.frame_id = "map"
         pc21 = point_cloud2.create_cloud(header1, fields1, points2)
         self.pub1.publish(pc21)
 
